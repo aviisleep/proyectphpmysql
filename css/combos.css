@@ -1,0 +1,102 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --button-black: #000;
+    --text-blue: #2196f3;
+    --color-gray-text: gray;
+    --title: 45px;
+    --subtitle: 18px;
+    --text: 22px;
+    --weigth-normal: 300;
+    --bold: 700;
+}
+.nav-principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.list-nav{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.text-logout{
+    color: #f02d2d;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    border-right: 1px solid black;
+    padding: 0 8px;
+    color: var(--text-blue);
+    text-decoration: underline;
+}
+.container-home{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    margin-top: 5rem;
+}
+.container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-promo{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+.sub-promo{
+    font-size: 17px;
+}
+.container-cards{
+    margin-top: 3rem;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    grid-template-rows: 1fr 1fr;
+}
+.card-text{
+    position: relative;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagenes/login.jpg');
+    width: 60vh;
+    height: 45vh;
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.container-text-card{
+    z-index: 10;
+}
+.text-info{
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 40px;   
+    letter-spacing: -2px;    
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    background-color: #00000078;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;    
+}
+.info-text{
+    color: #fff;
+    line-height: 25px;
+    width: 85%;
+}
